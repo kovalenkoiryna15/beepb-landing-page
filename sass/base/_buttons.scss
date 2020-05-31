@@ -15,4 +15,12 @@
 .button_colored:hover {
   background: $color-brand-light;
   color: $color-dark-heading;
+  transform: scale(1.1); 
+}
+.link_button {
+  font-weight: 600;
+  @extend %transition;
+}
+.link_button:hover {
+  transform: scale(1.1);
 }

@@ -1,9 +1,13 @@
 .promo-content {
   padding: 11px 0px 0px 0px;
+  color: $color-light;
 }
 .promo-content__wrapper {
   display: flex;
   padding: 30px 0px 0px 0px;
+}
+.promo__text {
+  color: $color-normal;
 }
 .promo-images {
   height: 821.63px;
@@ -19,6 +23,10 @@
 .promo-image {  
   height: 100%;
   width: 100%;  
+  @extend %transition;
+}
+.promo-image:hover {
+  transform: scale(1.1); 
 }
 .promo-image__wrapper {
   position: absolute;
@@ -36,7 +44,4 @@
 }
 .promo__description {
   padding: 150px 0px 0px 10px;
-}
-.promo__title {
-  padding: 0px 0px 30px 0px;
 }

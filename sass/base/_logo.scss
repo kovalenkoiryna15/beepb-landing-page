@@ -1,10 +1,14 @@
-.header__logo {
-  
-}
 .logo {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  @extend %transition;
 }
 .logo_img {
   height: 40px;
 }
+.logo:hover {
+  color: $color-brand;
+  text-shadow: 0 0 20px $color-brand;
+  transform: scale(1.1);  
+}
+
