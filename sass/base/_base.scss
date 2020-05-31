@@ -1,38 +1,22 @@
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 10px;
 }
-
 body {
-  margin: 0px;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
   font-family: 'Work Sans', 'Open Sans', 'Verdana', sans-serif;
+  @include font (normal, normal, 1.4rem, 1.6rem); 
 }
-
 h1 {
-  font-family: 'Work Sans', 'Open Sans', 'Verdana', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 50px;
+  @include font (normal, 300, 4rem, 5rem);
 }
-
 h2 {
-  font-family: 'Work Sans', 'Open Sans', 'Verdana', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 34px;
-  line-height: 40px;
+  @include font (normal, normal, 3.4rem, 4rem);
 }
-
 h3 {
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
+  @include font (normal, normal, 2.4rem, 2.8rem);
 }
-
 a {
   text-decoration: none;
   color: inherit;
