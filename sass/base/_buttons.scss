@@ -1,0 +1,18 @@
+.button {
+  padding: 10px 30px 9px 30px;
+  border: none;
+  font-family: 'Work Sans', 'Open Sans', 'Verdana', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  cursor: pointer;
+}
+.button_colored {
+  background: $color-brand;
+  border-radius: 10px;
+  color: $color-light;
+  @extend %transition;
+}
+.button_colored:hover {
+  background: $color-brand-light;
+  color: $color-dark-heading;
+}

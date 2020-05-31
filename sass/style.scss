@@ -1,6 +1,15 @@
 @import "abstracts/variables";
+@import "abstracts/placeholders";
+
+//Base
 @import "base/base";
+@import "base/logo";
+@import "base/buttons";
+
+//Layouts
 @import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/promo";
 
 // Components
 @import "components/promo";

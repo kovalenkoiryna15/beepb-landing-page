@@ -13,8 +13,9 @@
       <div class="wrapper header__wrapper">
         <div class="header__logo">          
           <a href="#" class="logo">
-            <img src="src/img/logo.png" alt="beepb.io logotype">         
-            beepb.io</a>
+            <img src="src/img/logo.png" alt="beepb.io logotype" class="logo_img"/>
+            <span class="logo_item">beepb.io</span>
+          </a>          
         </div>        
         <nav class="header__navigation"> 
           <ul class="breadcrumb__list">
@@ -24,18 +25,26 @@
             <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Downloads</a></li>
             <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Support</a></li>
           </ul>
-        </nav>
-        <div class="header__button">
-          <button class="button button_colored">Get Started</button>
-        </div>
+          <div class="header__button">
+            <button class="button button_colored">Get Started</button>
+          </div>
+        </nav>        
       </div>      
     </header>
-    <div class="promo__content">
-      <div class="wrapper promo__wrapper">
-        <img class="promo__image" src="src/img/promo/iPhone_X_front.png" alt="iphone X image">
-        <img class="promo__image" src="src/img/promo/iPhone_X_back.png" alt="iphone X image">
+    <div class="promo-content">
+      <div class="wrapper promo-content__wrapper">
+        <div class="promo-images">
+          <div class="promo-images__wrapper">
+              <div class="promo-image__wrapper promo-image_front">
+                  <img class="promo-image" src="src/img/promo/iPhone_X_front.png" alt="iphone X image">
+                </div>
+                <div class="promo-image__wrapper promo-image_back">
+                  <img class="promo-image" src="src/img/promo/iPhone_X_back.png" alt="iphone X image">
+                </div>
+          </div>            
+        </div>                
         <div class="promo__description">
-            <h1 class="promo__title">Warehouse management Made simple.</h1>
+            <h1 class="promo__title">Warehouse management<br>Made simple.</h1>
             <p class="promo__text">BeepB lets you take control of your complete ecommerce warehouse and understand how you’re business is holding up.</p>
             <div class="promo__buttons">
               <button class="button button_colored">Download the app</button>
