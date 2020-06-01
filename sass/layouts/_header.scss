@@ -11,17 +11,17 @@
   display: flex;
   align-items: center;
 }
-.breadcrumb__list {
+.navigation__list {
   display: flex;
   list-style: none;
   margin: 0px;
 }
-.breadcrumb__item {
+.navigation__item {
   padding: 0px 40px 0px 0px;
   @extend %transition;
-}
-.breadcrumb__item:hover {
-  color: $color-brand;
-  text-shadow: 0 0 20px $color-brand;
-  transform: scale(1.1); 
+  &:hover {
+    color: $color-brand;
+    text-shadow: 0 0 20px $color-brand;
+    transform: scale(1.1); 
+  }
 }

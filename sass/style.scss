@@ -4,15 +4,19 @@
 @import "abstracts/variables";
 @import "abstracts/placeholders";
 @import "abstracts/mixins";
+
 //Base
 @import "base/base";
 @import "base/logo";
 @import "base/buttons";
+@import "base/icons";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/promo";
+@import "layouts/columns";
+@import "layouts/features";
 
 // Components
 @import "components/promo";

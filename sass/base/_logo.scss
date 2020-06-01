@@ -2,13 +2,12 @@
   display: flex;
   justify-content: center;
   @extend %transition;
+  &_img {
+    height: 40px;
+  }
+  &:hover {
+    color: $color-brand;
+    text-shadow: 0 0 20px $color-brand;
+    transform: scale(1.1);  
+  }
 }
-.logo_img {
-  height: 40px;
-}
-.logo:hover {
-  color: $color-brand;
-  text-shadow: 0 0 20px $color-brand;
-  transform: scale(1.1);  
-}
-

@@ -4,3 +4,21 @@
   font-size: $size;  
   line-height: $height;
 }
+@mixin columns ($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  >* {
+    flex-basis: $width;
+  }
+}
+@mixin rows ($height) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+  >* {
+    flex-basis: $height;
+  }
+}
