@@ -451,7 +451,7 @@ template {
   display: none;
 }
 
-.promo-image, .navigation__item, .button_link, .button_colored, .logo {
+.promo-image, .navigation__item, .button_link, .button_colored, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -499,14 +499,18 @@ a {
 
 .logo {
   display: flex;
-  justify-content: center;
 }
-.logo_img {
+
+.logo-object {
+  width: 148px;
   height: 40px;
 }
-.logo:hover {
-  color: #14B45C;
-  text-shadow: 0 0 20px #14B45C;
+
+.logo-svg {
+  cursor: pointer;
+}
+.logo-svg:hover .logo-path {
+  fill: #14B45C;
   transform: scale(1.1);
 }
 
@@ -545,6 +549,10 @@ a {
   margin-left: 10px;
 }
 
+.button_GooglePlay, .button_AppStore {
+  background: none;
+}
+
 .icon {
   cursor: pointer;
   display: inline-block;
@@ -558,8 +566,72 @@ a {
 
 .icon_SuperSecured {
   background-image: url("../src/img/icons/icon_SuperSecured.svg");
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 80px;
+}
+
+.icon_DetailedAnalytics {
+  background-image: url("../src/img/icons/icon_DetailedAnalytics.svg");
+  width: 70px;
+  height: 80px;
+}
+
+.icon_ForAnyBusiness {
+  background-image: url("../src/img/icons/icon_ForAnyBusiness.svg");
+  width: 70px;
+  height: 80px;
+}
+
+.icon_cart {
+  background-image: url("../src/img/icons/icon_cart.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.icon_person {
+  background-image: url("../src/img/icons/icon_person.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.icon_analytics {
+  background-image: url("../src/img/icons/icon_analytics.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.icon_intelligent {
+  background-image: url("../src/img/icons/icon_intelligent.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.icon_GooglePlay {
+  background-image: url("../src/img/icons/icon_GooglePlay.svg");
+  width: 135px;
+  height: 40px;
+}
+
+.icon_AppStore {
+  background-image: url("../src/img/icons/icon_AppStore.svg");
+  width: 119px;
+  height: 40px;
+}
+
+.mark {
+  display: inline-block;
+}
+
+.mark_colored {
+  background-image: url("../src/img/download/mark_active.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.mark_colorless {
+  background-image: url("../src/img/download/mark_inactive.svg");
+  width: 20px;
+  height: 20px;
 }
 
 .wrapper {
@@ -681,7 +753,7 @@ a {
   align-items: center;
 }
 .layout-1-column_2-row > * {
-  flex-basis: 10%;
+  flex-basis: 5%;
 }
 
 .features__title {
@@ -702,6 +774,44 @@ a {
   justify-content: space-between;
   max-width: 400px;
   margin: 40px 0px;
+}
+
+.plans {
+  background: url(../src/img/backgrounds/background_plans.svg) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.plans__buttons {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 40px 0px;
+}
+
+.support {
+  max-width: 60%;
+  background-color: #ffffff;
+  border-top: 4px solid #14B45C;
+  border-radius: 4px;
+  margin: -92px 0 0 0;
+}
+
+.support__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  background: url(../src/img/backgrounds/background_footer.svg) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

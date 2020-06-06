@@ -10,6 +10,7 @@
 @import "base/logo";
 @import "base/buttons";
 @import "base/icons";
+@import "base/mark";
 
 //Layouts
 @import "layouts/wrapper";
@@ -20,3 +21,7 @@
 
 // Components
 @import "components/promo";
+@import "components/plans";
+@import "components/downloads";
+@import "components/support";
+@import "components/footer";

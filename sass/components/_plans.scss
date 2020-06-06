@@ -1,0 +1,10 @@
+.plans {
+  background: url(../src/img/backgrounds/background_plans.svg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.plans__buttons {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 40px 0px;
+}

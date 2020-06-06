@@ -1,0 +1,12 @@
+.support {
+  max-width: 60%;
+  background-color: $color-light;
+  border-top: 4px solid $color-brand;
+  border-radius: 4px;
+  margin: -92px 0 0 0;
+}
+.support__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

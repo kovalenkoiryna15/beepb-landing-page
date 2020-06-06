@@ -1,13 +1,19 @@
 .logo {
   display: flex;
-  justify-content: center;
+}
+.logo-object {
+  width: 148px;
+  height: 40px;
+}
+.logo-path {
   @extend %transition;
-  &_img {
-    height: 40px;
-  }
+}
+.logo-svg {
+  cursor: pointer;
   &:hover {
-    color: $color-brand;
-    text-shadow: 0 0 20px $color-brand;
-    transform: scale(1.1);  
+    .logo-path {
+      fill: $color-brand;
+      transform: scale(1.1);
+    }
   }
 }

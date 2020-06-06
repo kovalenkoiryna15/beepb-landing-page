@@ -11,11 +11,12 @@
   <section class="promo">
     <header class="header">
       <div class="wrapper header__wrapper">
-        <div class="header__logo">          
-          <a href="#" class="logo">
-            <img src="src/img/logo.png" alt="beepb.io logotype" class="logo_img"/>
-            <span class="logo_item">beepb.io</span>
-          </a>          
+        <div class="header__logo">
+            <a href="#" class="logo">
+              <object type="image/svg+xml" data="./src/img/logo/Logo.svg" class="logo-object">
+                Your browser does not support SVG
+              </object>
+            </a>
         </div>        
         <nav class="header__navigation"> 
           <ul class="navigation__list">
@@ -71,14 +72,14 @@
         </div>
         <div class="feature">
             <div class="feature__icon">
-              <span class="icon"></span>
+              <span class="icon icon_DetailedAnalytics"></span>
             </div>
             <h3 class="feature__title">Detailed Analytics</h3>
             <p class="feature__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
         </div>
         <div class="feature">
             <div class="feature__icon">
-              <span class="icon"></span>
+              <span class="icon icon_ForAnyBusiness"></span>
             </div>
             <h3 class="feature__title">For any business</h3>
             <p class="feature__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
@@ -92,14 +93,14 @@
         <div class="layout-1-column_2-row benefits__content">
           <div class="benefit">
             <div class="benefit__icon">
-              <span class=""></span>
+              <span class="icon icon_cart"></span>
             </div>
             <h3 class="benefit__title">Detailed Order Information</h3>
             <p class="benefit__text">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
           </div>
           <div class="benefit">
             <div class="benefit__icon">
-              <span class=""></span>
+              <span class="icon icon_person"></span>
             </div>
             <h3 class="benefit__title">Buyer Information</h3>
             <p class="benefit__text">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
@@ -111,14 +112,14 @@
         <div class="layout-1-column_2-row benefits__content">
             <div class="benefit">
               <div class="benefit__icon">
-                <span class=""></span>
+                <span class="icon icon_analytics"></span>
               </div>
               <h3 class="benefit__title">Detailed Analytics</h3>
               <p class="benefit__text">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
             </div>
             <div class="benefit">
               <div class="benefit__icon">
-                <span class=""></span>
+                <span class="icon icon_intelligent"></span>
               </div>
               <h3 class="benefit__title">Intelligent Alerts</h3>
               <p class="benefit__text">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
@@ -130,28 +131,28 @@
       </div>
     </div>
   </section>
-  <section class="plans">
+  <section class="plans downloads">
     <div class="wrapper plans__wrapper">
       <h2 class="plans__title">For every kind of Business!</h2>
       <p class="plans__text">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
       <div class="layout-3-column plans__content">
         <div class="plan">
           <div class="plan__image">
-            <img srs="" alt="plan image">
+            <img src="src/img/plans/plans-startups.png" alt="plan image">
           </div>
           <h3 class="plan__title">Startups</h3>
           <p class="plan__text">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam</p>
         </div>
         <div class="plan">
           <div class="plan__image">
-            <img srs="" alt="plan image">
+            <img src="src/img/plans/plans-retailers.png" alt="plan image">
           </div>
           <h3 class="plan__title">Retailers</h3>
           <p class="plan__text">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam</p>
         </div>
         <div class="plan">
           <div class="plan__image">
-            <img srs="" alt="plan image">
+            <img src="src/img/plans/plans-individuals.png" alt="plan image">
           </div>
           <h3 class="plan__title">Individuals</h3>
           <p class="plan__text">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam</p>
@@ -161,8 +162,6 @@
         <button class="button button_black-white">Learn more</button>
       </div>
     </div>
-  </section>
-  <section class="downloads">
     <div class="wrapper wrapper_downloads">
       <div class="downloads__content">
         <h2 class="downloads__title">Our users love the app!</h2>
@@ -170,21 +169,21 @@
           <div class="downloads__slide">
             <p class="slide__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
             <div class="slide__icon">
-              <img src="" alt="person image">
-              <span class="person__name"></span>
+              <img src="src/img/download/client-photo.png" alt="person image">
+              <span class="person__name">Kimberly Franklin</span>
               <div class="person__mark">
                 <span class="mark mark_colored"></span>
                 <span class="mark mark_colored"></span>
                 <span class="mark mark_colored"></span>
-                <span class="mark mark_colored"></span>
-                <span class="mark mark_colored"></span>
+                <span class="mark mark_colorless"></span>
+                <span class="mark mark_colorless"></span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section>    
   <footer class="footer">
     <div class="wrapper footer__wrapper">
       <section class="support">
@@ -193,16 +192,8 @@
             <h3 class="support__title">Get started with the mobile app!</h3>
             <p class="support__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
             <div class="support__buttons">
-              <button class="button button_google-play">
-                <span class="icon_google-play"></span>
-                <span>GET IT ON</span>
-                <span>Google Play</span>
-              </button>
-              <button class="button button_app-store">
-                <span class="icon_app-store"></span>
-                <span>Download on the</span>
-                <span>App Store</span>
-              </button>
+              <button class="button button_GooglePlay icon_GooglePlay"></button>
+              <button class="button button_AppStore icon_AppStore"></button>
             </div>
           </div>
         </div>
