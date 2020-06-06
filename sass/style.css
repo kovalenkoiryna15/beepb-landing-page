@@ -511,7 +511,6 @@ a {
 }
 .logo-svg:hover .logo-path {
   fill: #14B45C;
-  transform: scale(1.1);
 }
 
 .button {
@@ -667,7 +666,6 @@ a {
 .navigation__item:hover {
   color: #14B45C;
   text-shadow: 0 0 20px #14B45C;
-  transform: scale(1.1);
 }
 
 .promo-content {
