@@ -21,6 +21,5 @@
   @extend %transition;
   &:hover {
     color: $color-brand;
-    text-shadow: 0 0 20px $color-brand;
   }
 }

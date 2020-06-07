@@ -8,3 +8,21 @@
   max-width: 400px;
   margin: 40px 0px;
 }
+.plans__description {
+  margin-bottom: 80px;
+}
+.plans__title, .plans__text {
+  margin: auto;
+  text-align: center;  
+}
+.plans__title {
+  margin-bottom: 20px;
+}
+.plan__img-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.plan__image {
+  max-width: 120%;
+}

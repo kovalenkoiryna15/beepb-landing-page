@@ -14,13 +14,13 @@
 
 //Layouts
 @import "layouts/wrapper";
-@import "layouts/header";
-@import "layouts/promo";
 @import "layouts/columns";
-@import "layouts/features";
 
 // Components
+@import "components/header";
 @import "components/promo";
+@import "components/features";
+@import "components/benefits";
 @import "components/plans";
 @import "components/downloads";
 @import "components/support";
