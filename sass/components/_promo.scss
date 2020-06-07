@@ -1,5 +1,5 @@
 .promo {
-  background: url(../src/img/backgrounds/bg-top.png) 100% 100% no-repeat;
+  background: url(../src/img/backgrounds/background-promo.svg) 100% 100% no-repeat;
   background-size: cover;
 }
 .promo__buttons {
@@ -40,9 +40,9 @@
   height: 100%;
   width: 100%;  
   @extend %transition;
-}
-.promo-image:hover {
-  transform: scale(1.1); 
+  &:hover {
+    transform: scale(1.1); 
+  }
 }
 .promo-image_front {
   z-index: 30;

@@ -1,6 +1,10 @@
 .plans {
-  background: url(../src/img/backgrounds/background_plans.svg) 100% 100% no-repeat;
-  background-size: cover;
+  background: url(../src/img/backgrounds/background_plans.svg) no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.plans__wrapper {
+  margin-bottom: 260px;
 }
 .plans__buttons {
   display: flex;
@@ -18,10 +22,20 @@
 .plans__title {
   margin-bottom: 20px;
 }
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.plan__title {
+  margin-bottom: 10px;
+}
 .plan__img-wrapper {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-radius: 22px 22px 0 0;
 }
 .plan__image {
   max-width: 120%;

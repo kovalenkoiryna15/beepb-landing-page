@@ -451,7 +451,7 @@ template {
   display: none;
 }
 
-.promo-image, .navigation__item, .button_link, .button_colored, .logo-path {
+.benefit-path, .benefit__image, .promo-image, .navigation__item, .button_link, .button_colored, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -581,26 +581,7 @@ a {
   height: 80px;
 }
 
-.icon_cart {
-  background-image: url("../src/img/icons/icon_cart.svg");
-  width: 60px;
-  height: 60px;
-}
-
-.icon_person {
-  background-image: url("../src/img/icons/icon_person.svg");
-  width: 60px;
-  height: 60px;
-}
-
-.icon_analytics {
-  background-image: url("../src/img/icons/icon_analytics.svg");
-  width: 60px;
-  height: 60px;
-}
-
-.icon_intelligent {
-  background-image: url("../src/img/icons/icon_intelligent.svg");
+.icon_cart, .icon_person, .icon_analytics, .icon_intelligent {
   width: 60px;
   height: 60px;
 }
@@ -697,7 +678,7 @@ a {
 }
 
 .promo {
-  background: url(../src/img/backgrounds/bg-top.png) 100% 100% no-repeat;
+  background: url(../src/img/backgrounds/background-promo.svg) 100% 100% no-repeat;
   background-size: cover;
 }
 
@@ -746,7 +727,6 @@ a {
   height: 100%;
   width: 100%;
 }
-
 .promo-image:hover {
   transform: scale(1.1);
 }
@@ -766,6 +746,10 @@ a {
   padding: 150px 0px 0px 10px;
 }
 
+.features__wrapper {
+  margin-bottom: 260px;
+}
+
 .features__description {
   margin-bottom: 80px;
 }
@@ -776,6 +760,25 @@ a {
   margin-bottom: 20px;
 }
 
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.benefits {
+  background: url(../src/img/backgrounds/background_benefits.svg) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.benefits__wrapper {
+  margin: 100px auto 260px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .benefit__img-wrapper {
   width: 100%;
   height: auto;
@@ -784,10 +787,29 @@ a {
 .benefit__image {
   max-width: 100%;
 }
+.benefit__image:hover {
+  transform: scale(1.1);
+}
+
+.benefits__content {
+  margin-bottom: 100px;
+}
+
+.benefit-svg {
+  cursor: pointer;
+}
+.benefit-svg:hover .benefit-path {
+  fill: #14B45C;
+}
 
 .plans {
-  background: url(../src/img/backgrounds/background_plans.svg) 100% 100% no-repeat;
-  background-size: cover;
+  background: url(../src/img/backgrounds/background_plans.svg) no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.plans__wrapper {
+  margin-bottom: 260px;
 }
 
 .plans__buttons {
@@ -810,10 +832,22 @@ a {
   margin-bottom: 20px;
 }
 
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.plan__title {
+  margin-bottom: 10px;
+}
+
 .plan__img-wrapper {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-radius: 22px 22px 0 0;
 }
 
 .plan__image {
