@@ -38,14 +38,12 @@
   display: flex;
 }
 .copyright {
-  flex-grow: 1.5;
+  flex-grow: 5;
 }
 .social-media__links {
   display: flex;
   justify-content: space-between;
-  &>* {
-    margin: 0 20px 0 0;    
-  }
+  flex-grow: 1;
 }
 .media-svg {
   @extend %transition;
