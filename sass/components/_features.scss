@@ -1,5 +1,5 @@
 .features__wrapper {
-  margin-bottom: 260px;
+  margin-bottom: 160px;
 }
 .features__description {
   margin-bottom: 80px;
@@ -14,4 +14,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.feature__title {
+  margin: 24px 0;
+}
+.feature__icon {
+  margin: 0 0 20px 0;
+  @extend %transition;
+  &:hover {
+    transform: scale(1.1); 
+  }
 }

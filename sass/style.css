@@ -451,12 +451,62 @@ template {
   display: none;
 }
 
-.benefit-path, .benefit__image, .promo-image, .navigation__item, .button_link, .button_colored, .logo-path {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.media-svg, .footer-navigation__links > *, .arrow-svg, .arrow-path, .benefit-path, .benefit__image, .feature__icon, .promo-image, .navigation__item, .button_black-white, .button_link, .button_colored, .logo-path {
   transition: all 0.3s ease-out;
 }
 
-* {
-  box-sizing: border-box;
+.mark {
+  display: inline-block;
+}
+
+.mark_colored {
+  background-image: url("../src/img/download/mark_active.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.mark_colorless {
+  background-image: url("../src/img/download/mark_inactive.svg");
+  width: 20px;
+  height: 20px;
 }
 
 html {
@@ -490,11 +540,6 @@ h3 {
   font-weight: normal;
   font-size: 2.4rem;
   line-height: 2.8rem;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .logo {
@@ -552,6 +597,18 @@ a {
   background: none;
 }
 
+.button_black-white {
+  border: 1px solid #1C1F28;
+  border-radius: 16px;
+  background: #ffffff;
+}
+.button_black-white:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: #A1A4AC;
+}
+
 .icon {
   cursor: pointer;
   display: inline-block;
@@ -571,13 +628,13 @@ a {
 
 .icon_DetailedAnalytics {
   background-image: url("../src/img/icons/icon_DetailedAnalytics.svg");
-  width: 70px;
+  width: 77px;
   height: 80px;
 }
 
 .icon_ForAnyBusiness {
   background-image: url("../src/img/icons/icon_ForAnyBusiness.svg");
-  width: 70px;
+  width: 80px;
   height: 80px;
 }
 
@@ -700,6 +757,10 @@ a {
   padding: 30px 0px 0px 0px;
 }
 
+.promo__title {
+  margin: 0 0 30px 0;
+}
+
 .promo__text {
   color: #A1A4AC;
 }
@@ -747,7 +808,7 @@ a {
 }
 
 .features__wrapper {
-  margin-bottom: 260px;
+  margin-bottom: 160px;
 }
 
 .features__description {
@@ -767,13 +828,24 @@ a {
   text-align: center;
 }
 
+.feature__title {
+  margin: 24px 0;
+}
+
+.feature__icon {
+  margin: 0 0 20px 0;
+}
+.feature__icon:hover {
+  transform: scale(1.1);
+}
+
 .benefits {
   background: url(../src/img/backgrounds/background_benefits.svg) 100% 100% no-repeat;
   background-size: cover;
 }
 
 .benefits__wrapper {
-  margin: 100px auto 260px auto;
+  margin: 100px auto 160px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -795,6 +867,10 @@ a {
   margin-bottom: 100px;
 }
 
+.benefit__title {
+  margin: 0 0 40px 0;
+}
+
 .benefit-svg {
   cursor: pointer;
 }
@@ -809,7 +885,7 @@ a {
 }
 
 .plans__wrapper {
-  margin-bottom: 260px;
+  margin-bottom: 160px;
 }
 
 .plans__buttons {
@@ -844,6 +920,7 @@ a {
 }
 
 .plan__img-wrapper {
+  margin: 0 0 30px 0;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -854,18 +931,118 @@ a {
   max-width: 120%;
 }
 
+.plans__buttons {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: max-content;
+}
+
+.plans__content {
+  margin: 0 0 60px 0;
+}
+
+.downloads__wrapper {
+  margin: 0 auto 252px auto;
+}
+
+.downloads__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloads__description {
+  margin: 0 0 12px 0;
+}
+
+.downloads__slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide__arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  width: 100px;
+  height: 100px;
+}
+
+.arrow-svg {
+  cursor: pointer;
+}
+.arrow-svg:hover {
+  transform: scale(1.3);
+}
+.arrow-svg:hover .arrow-path {
+  stroke: #14B45C;
+}
+
+.slide__content {
+  max-width: 60%;
+}
+
+.slide__text {
+  margin: 40px 0;
+  color: #A1A4AC;
+  text-align: center;
+}
+
+.slide__person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person__icon {
+  margin: 0 30px 0 0;
+}
+
+.person__name-mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.person__name {
+  margin-bottom: 17px;
+}
+
 .support {
   max-width: 60%;
   background-color: #ffffff;
   border-top: 4px solid #14B45C;
-  border-radius: 4px;
+  border-radius: 15px;
   margin: -92px 0 0 0;
+  box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
 }
 
 .support__wrapper {
+  margin: 92px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.support__content {
+  max-width: 70%;
+  text-align: center;
+}
+
+.support__title {
+  margin-bottom: 20px;
+}
+
+.support__text {
+  margin-bottom: 30px;
+}
+
+.support__buttons {
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer {
@@ -878,6 +1055,57 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.footer__wrapper > * {
+  margin-bottom: 92px;
+}
+
+.footer-navigation {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.footer-navigation > * {
+  width: 100%;
+  margin-bottom: 92px;
+}
+
+.footer-navigation__column__title {
+  margin-bottom: 30px;
+}
+
+.footer-navigation__links > * {
+  margin-bottom: 20px;
+}
+.footer-navigation__links > *:hover {
+  color: #14B45C;
+}
+
+.copyright__social-media {
+  display: flex;
+}
+
+.copyright {
+  flex-grow: 1.5;
+}
+
+.social-media__links {
+  display: flex;
+  justify-content: space-between;
+}
+.social-media__links > * {
+  margin: 0 20px 0 0;
+}
+
+.media-svg {
+  cursor: pointer;
+}
+.media-svg:hover {
+  transform: scale(1.3);
 }
 
 /*# sourceMappingURL=style.css.map */

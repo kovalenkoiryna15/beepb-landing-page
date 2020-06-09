@@ -1,0 +1,60 @@
+.downloads__wrapper {
+  margin: 0 auto 252px auto;
+}
+.downloads__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.downloads__description {
+  margin: 0 0 12px 0;
+}
+.downloads__slide {
+  display: flex;
+  justify-content: space-between;
+}
+.slide__arrow {
+  display: flex;
+  justify-content: center;
+}
+.arrow {
+  width: 100px;
+  height: 100px;
+}
+.arrow-path {
+  @extend %transition;
+}
+.arrow-svg {
+  @extend %transition;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.3);
+    .arrow-path {
+      stroke: $color-brand;      
+    }
+  }
+}
+.slide__content {
+  max-width: 60%;
+}
+.slide__text {
+  margin: 40px 0;
+  color: $color-text;
+  text-align: center;
+}
+.slide__person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person__icon {
+  margin: 0 30px 0 0;
+}
+.person__name-mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.person__name {
+  margin-bottom: 17px;
+}

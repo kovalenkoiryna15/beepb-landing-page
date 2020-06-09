@@ -3,7 +3,7 @@
   background-size: cover;
 }
 .benefits__wrapper {
-  margin: 100px auto 260px auto;  
+  margin: 100px auto 160px auto;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,9 @@
 }
 .benefits__content {
   margin-bottom: 100px;
+}
+.benefit__title {
+  margin: 0 0 40px 0;
 }
 .benefit-path {
   @extend %transition;

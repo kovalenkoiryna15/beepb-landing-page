@@ -31,3 +31,15 @@
 .button_GooglePlay, .button_AppStore {
   background: none;
 }
+.button_black-white {
+  border: 1px solid $color-dark-heading;
+  border-radius: 16px;
+  background: $color-light;
+  @extend %transition;
+  &:hover {
+    transform: scale(1.1);
+    color: $color-light;
+    border: 1px solid $color-light;
+    background: $color-text;
+  }
+}

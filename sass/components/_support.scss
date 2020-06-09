@@ -1,12 +1,28 @@
 .support {
-  max-width: 60%;
+  max-width: 60%;  
   background-color: $color-light;
   border-top: 4px solid $color-brand;
-  border-radius: 4px;
+  border-radius: 15px;
   margin: -92px 0 0 0;
+  box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
 }
 .support__wrapper {
+  margin: 92px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+.support__content {
+  max-width: 70%;
+  text-align: center;
+}
+.support__title {
+  margin-bottom: 20px;
+}
+.support__text {
+  margin-bottom: 30px;
+}
+.support__buttons {
+  display: flex;
+  justify-content: space-around;
 }
