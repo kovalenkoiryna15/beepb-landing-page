@@ -1,5 +1,9 @@
 .logo {
-  display: flex;
+  display: inline-flex;
+  @include media-tablet {    
+    flex-grow: 3;
+    justify-content: center;
+  }
 }
 .logo-object {
   width: 148px;

@@ -30,9 +30,21 @@
   background-image: url('../src/img/icons/icon_GooglePlay.svg');
   width: 135px;
   height: 40px;
+  @include media-tablet {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: calc(135px - 135px * 0.1);
+    height: calc(40px - 40px * 0.1);
+  }
 }
 .icon_AppStore {
   background-image: url('../src/img/icons/icon_AppStore.svg');
   width: 119px;
   height: 40px;
+  @include media-tablet {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: calc(119px - 119px * 0.1);
+    height: calc(40px - 40px * 0.1);
+  }
 }

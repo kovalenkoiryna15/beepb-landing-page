@@ -2,13 +2,6 @@
   background: url(../src/img/backgrounds/background-promo.svg) 100% 100% no-repeat;
   background-size: cover;
 }
-.promo__buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 400px;
-  margin: 40px 0px;
-}
 .promo-content {
   padding: 11px 0px 0px 0px;
   color: $color-light;
@@ -17,27 +10,33 @@
   display: flex;
   padding: 30px 0px 0px 0px;
 }
-.promo__title {
-  margin: 0 0 30px 0;
-}
-.promo__text {
-  color: $color-normal;
-}
 .promo-images {
   height: 821.63px;
   width: 540.65px;
   margin: 60px 0px 0px 0px;
+  @include media-tablet {
+    width: calc(540.65px - 540.65px * 0.2);
+    height: calc(821.63px - 821.63px * 0.1);    
+  }
 }
 .promo-images__wrapper {
   display: inline-block;
-  position: relative;
+  position: relative;  
   height: 821.63px;
-  width: 540.65px;  
+  width: 540.65px;
+  @include media-tablet {
+    width: calc(540.65px - 540.65px * 0.2);
+    height: calc(821.63px - 821.63px * 0.2);
+  }
 }
 .promo-image__wrapper {
   position: absolute;
   height: 701.63px;
   width: 340.65px;
+  @include media-tablet {
+    width: calc(340.65px - 340.65px * 0.2);
+    height: calc(701.63px - 701.63px * 0.2);
+  }
 }
 .promo-image {  
   height: 100%;
@@ -45,6 +44,10 @@
   @extend %transition;
   &:hover {
     transform: scale(1.1); 
+  }
+  @include media-tablet {
+    width: 80%;
+    height: 80%;
   }
 }
 .promo-image_front {
@@ -57,5 +60,26 @@
   left: 40px;  
 }
 .promo__description {
-  padding: 150px 0px 0px 10px;
+  padding: 150px 10px 0px 10px;
+  @include media-tablet {
+    padding-top: 50px;
+  }
+}
+.promo__title {
+  margin: 0 0 30px 0;
+}
+.promo__text {
+  color: $color-normal;
+  padding: 0px 40px 0px 0px;
+}
+.promo__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  height: 90px;
+  margin: 40px 40px 0px 0px;
+  @include media-tablet {
+    flex-direction: column;    
+  }
 }
