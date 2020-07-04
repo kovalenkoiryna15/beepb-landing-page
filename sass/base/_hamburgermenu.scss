@@ -6,16 +6,16 @@
   border-radius: 5px;
   height: 3px;
   width: 100%;
+  @include media-mobile--small {
+    height: 2.61px;
+  }
 }
 
 .hamburger {
   display: none;  
   position: relative;
   width: 31px;
-  height: 25px;
-  @include media-tablet {
-    display: inline-block;
-  }
+  height: 25px;  
   &:before {
     @extend %hamburger-line;
     top: 0;
@@ -25,6 +25,13 @@
     @extend %hamburger-line;
     bottom: 0;
     left: 0;
+  }
+  @include media-tablet {
+    display: inline-block;
+  }
+  @include media-mobile--small {
+    width: 27px;
+    height: 21.77px;
   }
 }
 .hamburger__line {

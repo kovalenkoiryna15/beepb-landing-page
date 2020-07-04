@@ -16,10 +16,6 @@
 @import "base/mark";
 @import "base/hamburgermenu";
 
-//Layouts
-@import "layouts/wrapper";
-@import "layouts/columns";
-
 // Components
 @import "components/header";
 @import "components/promo";
@@ -29,3 +25,7 @@
 @import "components/downloads";
 @import "components/support";
 @import "components/footer";
+
+//Layouts
+@import "layouts/wrapper";
+@import "layouts/columns";

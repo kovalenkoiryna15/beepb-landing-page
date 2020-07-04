@@ -8,9 +8,16 @@
 .logo-object {
   width: 148px;
   height: 40px;
+  @include media-mobile--small {
+    height: 33px;
+    width: auto;
+  }
 }
 .logo-path {
   @extend %transition;
+  @include media-mobile--small {    
+    fill: $color-brand;
+  }
 }
 .logo-svg {
   cursor: pointer;
@@ -18,5 +25,5 @@
     .logo-path {
       fill: $color-brand;
     }
-  }
+  }  
 }

@@ -5,16 +5,26 @@
   border-radius: 15px;
   margin: -92px 0 0 0;
   box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
+  @include media-mobile--small {
+    margin: 0 0;
+    max-width: 90%;    
+  }
 }
 .support__wrapper {
   margin: 92px auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  @include media-mobile--small {
+    margin: 0 0;
+  }
 }
 .support__content {
   max-width: 70%;
   text-align: center;
+  @include media-mobile--small {
+    margin: 40px 0;
+  }
 }
 .support__title {
   margin-bottom: 20px;
@@ -23,5 +33,5 @@
   margin-bottom: 30px;
 }
 .support__buttons {
-  display: flex;
+  display: flex;  
 }

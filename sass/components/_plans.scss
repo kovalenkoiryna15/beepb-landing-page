@@ -10,7 +10,10 @@
   display: flex;
   align-items: center;
   max-width: 400px;
-  margin: 40px 0px;
+  margin: 40px 0px;  
+  @include media-mobile--small {
+    padding-bottom: 40px;
+  }  
 }
 .plans__description {
   margin-bottom: 80px;
