@@ -1,10 +1,19 @@
 .wrapper {
   max-width: $content-width;  
-  margin: auto;
-  @include media-laptop {
-    padding: 0 50px;
+  margin: 0 auto 140px auto; 
+  @include media-tablet {
+    margin: 0 45px 40px 45px;
   }
   @include media-mobile--small {
-    padding: 0 20px;
+    margin: 0 20px 20px 20px;
+  }
+}
+.footer__wrapper {
+  margin: 0 auto;
+  @include media-tablet {
+    margin: 200px 45px 0 45px;
+  }
+  @include media-mobile--small {
+    margin: 0 20px;
   }
 }
