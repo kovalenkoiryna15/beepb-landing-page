@@ -5,14 +5,14 @@
 .promo-content {
   padding: 11px 0px 40px 0px;
   color: $color-light;
-  @include media-mobile--small {
-    padding-top: 0px;
+  @include media-mobile--big {
+    padding: 0 0;
   }
 }
 .promo-content__wrapper {
   display: flex;
   padding: 30px 0px 0px 0px;
-  @include media-mobile--small {
+  @include media-mobile--big {
     flex-direction: column-reverse;    
   }
 }
@@ -24,10 +24,10 @@
     height: 576.6px;
     width: max-content;   
   }
-  @include media-mobile--small {
-    height: 576.6px;
-    width: max-content;
+  @include media-mobile--big {
     margin: 20px 0 0 0;
+    width: 100%;
+    height: auto;
   }
 }
 .promo-images__wrapper {
@@ -35,8 +35,13 @@
   position: relative;
   width: max-content;
   height: auto;
-  @include media-mobile--small {
+  @include media-mobile--big {
     position: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
   }
 }
 .promo-image__wrapper {
@@ -47,15 +52,14 @@
     height: 526.6px;
     width: 272.5px;
   }
-  @include media-mobile--small {
-    height: 526.6px;
-    width: 272.5px;
+  @include media-mobile--big {
     position: unset;
-  }
+    width: 90%;
+    height: auto;
+  }  
 }
 .promo-image {  
-  max-width: 100%;
-  height: auto;  
+  max-width: 100%; 
   @extend %transition;
   &:hover {
     transform: scale(1.1); 
@@ -75,29 +79,26 @@
   @include media-tablet {
     left: 0px;
   }
-  @include media-mobile--small {
+  @include media-mobile--big {
     display: none;    
   }
 }
 .promo__description {
-  padding: 150px 10px 0px 10px;
+  padding: 150px 10px 0px 30px;
   @include media-tablet {
     padding: 50px 0 0 400px;
   }
-  @include media-mobile--small {
+  @include media-mobile--big {
     text-align: center;
     padding: 30px 0;
   }
 }
 .promo__title {
   margin-bottom: 30px;
-  @include media-mobile--small {
-    margin-bottom: 40px;
-  }
 }
 .promo__text {
   color: $color-normal;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .promo__buttons {
   display: flex;
@@ -109,8 +110,8 @@
   @include media-tablet {
     flex-direction: column;    
   }
-  @include media-mobile--small {
-    margin-bottom: 40px;
-    height: 130px;
+  @include media-mobile--big {
+    margin: 0px 0px 0px 0px;
+    height: 100px;
   }
 }

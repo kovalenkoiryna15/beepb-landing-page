@@ -3,15 +3,36 @@
   margin: 0 auto 140px auto; 
   @include media-tablet {
     margin: 0 45px 40px 45px;
+    padding-top: 40px;
+  }
+  @include media-mobile--big {
+    margin: 0 25px 30px 25px;
+    padding-top: 30px;
   }
   @include media-mobile--small {
     margin: 0 20px 20px 20px;
+    padding-top: 20px;
+  }
+}
+.header__wrapper {
+  padding: 60px 0 20px 0;
+  @include media-tablet {
+    padding: 40px 0 0 0;
+  }
+  @include media-mobile--big {
+    padding: 30px 0 0 0;
+  }
+  @include media-mobile--small {
+    padding: 20px 0 0 0;
   }
 }
 .footer__wrapper {
   margin: 0 auto;
   @include media-tablet {
     margin: 200px 45px 0 45px;
+  }
+  @include media-mobile--big {
+    margin: 0 45px;
   }
   @include media-mobile--small {
     margin: 0 20px;

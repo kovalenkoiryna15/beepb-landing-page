@@ -11,28 +11,41 @@
   align-items: center;
   max-width: 400px;
   margin: 40px 0px;  
-  @include media-mobile--small {
+  @include media-mobile--big {
     padding-bottom: 40px;
   }  
 }
 .plans__description {
   margin-bottom: 80px;
+  @include media-mobile--big {
+    margin-bottom: 40px;
+  }
 }
-.plans__title, .plans__text {
-  margin: auto;
+.plans__title, .plans__text, .plan__text {  
   text-align: center;  
 }
 .plans__title {
   margin-bottom: 20px;
+}
+.plans__text {
+  padding: 0 20px;
 }
 .plan {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @include media-mobile--big {
+    margin-bottom: 30px;
+  }
 }
 .plan__title {
   margin-bottom: 10px;
+}
+.plan__text {
+  @include media-mobile--big {
+    padding: 0 20px;
+  }
 }
 .plan__img-wrapper {
   margin: 0 0 30px 0;

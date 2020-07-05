@@ -1,15 +1,18 @@
 .layout-3-column {
   @include columns (31%);
-  @include media-mobile--small {
+  @include media-mobile--big {
     flex-direction: column;
   }
 }
 .layout-5-column {
   @include columns (15%);
-  @include media-mobile--small {
+  @include media-mobile--big {
     flex-direction: column;
   }
 }
 .layout-1-column_2-row {
   @include rows (5%);
+  @include media-mobile--big {
+    flex-direction: row;
+  }
 }

@@ -5,7 +5,7 @@
   border-radius: 15px;
   margin: -92px 0 0 0;
   box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
-  @include media-mobile--small {
+  @include media-mobile--big {
     margin: 0 0;
     max-width: 90%;    
   }
@@ -15,14 +15,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include media-mobile--small {
+  @include media-mobile--big {
     margin: 0 0;
   }
 }
 .support__content {
   max-width: 70%;
   text-align: center;
-  @include media-mobile--small {
+  @include media-mobile--big {
     margin: 40px 0;
   }
 }

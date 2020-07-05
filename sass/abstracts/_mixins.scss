@@ -27,6 +27,10 @@
   @include media-tablet {
     justify-content: unset;
   }
+  @include media-mobile--big {
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 @mixin media-laptop {
