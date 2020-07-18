@@ -498,13 +498,13 @@ a {
 }
 
 .mark_colored {
-  background-image: url("../src/img/download/mark_active.svg");
+  background-image: url("../img/download/mark_active.svg");
   width: 20px;
   height: 20px;
 }
 
 .mark_colorless {
-  background-image: url("../src/img/download/mark_inactive.svg");
+  background-image: url("../img/download/mark_inactive.svg");
   width: 20px;
   height: 20px;
 }
@@ -633,25 +633,25 @@ h3 {
 }
 
 .icon_play {
-  background-image: url("../src/img/icons/icon-play.svg");
+  background-image: url("../img/icons/icon-play.svg");
   width: 30px;
   height: 30px;
 }
 
 .icon_SuperSecured {
-  background-image: url("../src/img/icons/icon_SuperSecured.svg");
+  background-image: url("../img/icons/icon_SuperSecured.svg");
   width: 70px;
   height: 80px;
 }
 
 .icon_DetailedAnalytics {
-  background-image: url("../src/img/icons/icon_DetailedAnalytics.svg");
+  background-image: url("../img/icons/icon_DetailedAnalytics.svg");
   width: 77px;
   height: 80px;
 }
 
 .icon_ForAnyBusiness {
-  background-image: url("../src/img/icons/icon_ForAnyBusiness.svg");
+  background-image: url("../img/icons/icon_ForAnyBusiness.svg");
   width: 80px;
   height: 80px;
 }
@@ -662,7 +662,7 @@ h3 {
 }
 
 .icon_GooglePlay {
-  background-image: url("../src/img/icons/icon_GooglePlay.svg");
+  background-image: url("../img/icons/icon_GooglePlay.svg");
   width: 135px;
   height: 40px;
 }
@@ -676,7 +676,7 @@ h3 {
 }
 
 .icon_AppStore {
-  background-image: url("../src/img/icons/icon_AppStore.svg");
+  background-image: url("../img/icons/icon_AppStore.svg");
   width: 119px;
   height: 40px;
 }
@@ -694,13 +694,13 @@ h3 {
 }
 
 .mark_colored {
-  background-image: url("../src/img/download/mark_active.svg");
+  background-image: url("../img/download/mark_active.svg");
   width: 20px;
   height: 20px;
 }
 
 .mark_colorless {
-  background-image: url("../src/img/download/mark_inactive.svg");
+  background-image: url("../img/download/mark_inactive.svg");
   width: 20px;
   height: 20px;
 }
@@ -793,7 +793,7 @@ h3 {
 }
 
 .promo {
-  background: url(../src/img/backgrounds/background-promo.svg) 100% 100% no-repeat;
+  background: url(../img/backgrounds/background-promo.svg) 100% 100% no-repeat;
   background-size: cover;
 }
 
@@ -1000,7 +1000,7 @@ h3 {
 }
 
 .benefits {
-  background: url(../src/img/backgrounds/background_benefits.svg) 100% 100% no-repeat;
+  background: url(../img/backgrounds/background_benefits.svg) 100% 100% no-repeat;
   background-size: cover;
 }
 
@@ -1064,7 +1064,7 @@ h3 {
 }
 
 .plans {
-  background: url(../src/img/backgrounds/background_plans.svg) no-repeat;
+  background: url(../img/backgrounds/background_plans.svg) no-repeat;
   background-size: contain;
   background-position: 50% 50%;
 }
@@ -1289,7 +1289,7 @@ h3 {
 }
 
 .footer {
-  background: url(../src/img/backgrounds/background_footer.svg) 100% 100% no-repeat;
+  background: url(../img/backgrounds/background_footer.svg) 100% 100% no-repeat;
   background-size: cover;
 }
 
